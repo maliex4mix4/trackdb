@@ -12,3 +12,5 @@
 	} else {
 		die('Error: expected type STRING, '.strtoupper(gettype($table_name)).' given trackDB::table');
 	}
+	
+	$this->save();
