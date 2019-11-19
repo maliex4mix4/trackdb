@@ -4,7 +4,7 @@
 	$tables = [];
 
 	foreach ( $db as $key => $value) {
-		$tables[$key] = $value["meta"];
+		$tables[$key]['columns'] = array_flip($value["meta"]);
 	}
 
 	return $tables;

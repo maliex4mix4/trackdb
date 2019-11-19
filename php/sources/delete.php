@@ -22,8 +22,7 @@
 		}
 
 		if( isset($check["meta"]) ) {
-			echo "<br/>Error: trying to delete a column";
-			return;
+			die("<br/>Error: trying to delete a column");
 		} else {
 			unset($target[end($path)]);
 			array_pop($path);
